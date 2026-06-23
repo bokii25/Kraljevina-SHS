@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #f7f5f0;
+}
+
+
+:root {
+    --garamond: "Cormorant Garamond", serif;
+    --crvenadugmad: #c43939;
+    --btnactive: #ba1c1c;
+    --linecolor: #B1B2B5;
+    --subtxtfont: 'Lora', serif;
+    --subtxtfootercolor: #afafaf;
+    --zlatna: #d1a84d;
+    --subtxtcolor: #333333;
+}
+
+a{
+    font-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar{
+  
+    /* background-color: #1b1919; */
+    /* background-color: #460000d8; */
+    /* background-color: #820e0ed5; */
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+
+ 
+
+}
+
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero{
+    padding: 0 40px;
+    margin-top: 30px;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+.documenttwo{
+    border: 1px solid var(--zlatna);
+    width: 140px;
+    box-shadow: 0px 3px 10px #b5adad;
+}
+
+hr{
+    width: 80%;
+    height: 1px;
+    border: none;
+    background-color: var(--zlatna);
+}
+
+.naslovw{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.tit{
+    text-align: center;
+    font-family: var(--garamond);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tith{
+    font-size: 20px;
+    text-align: left;
+}
+
+
+.subtxt{
+    text-align: left;
+    font-size: 16px;
+    font-family: var(--subtxtfont);
+    color: var(--subtxtcolor);
+    margin-bottom: 100px;
+}
+
+
+
+
+
+.footerb{
+    border-top: 1px solid var(--zlatna);
+    padding: 30px;
+    width: 100%;
+    height: 300px;
+    background-color: #3f0404d9;
+
+
+}
+
+.flogo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.kshslogo{
+    width: 60px;
+
+}
+
+.logotxt{
+    font-size: 26px;
+    font-family: var(--garamond);
+    font-weight: 700;
+    color: #ffff;
+
+}
+
+.desc{
+    font-family: var(--garamond);
+    color: var(--subtxtfootercolor);
+    font-size: 20px;
+}
+
+.links{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--subtxtfootercolor);
+
+}

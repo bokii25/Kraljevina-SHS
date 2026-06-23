@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--garamond);
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+    --garamond: "Cormorant Garamond", serif;
+    --crvenadugmad: #c43939;
+    --btnactive: #ba1c1c;
+    --linecolor: #B1B2B5;
+    --subtxtfont: 'Lora', serif;
+    --subtxtfootercolor: #afafaf;
+    --zlatna: #d1a84d;
+
+}
+
+body {
+    background-color: #faf6ee; 
+    color: #2b2b2b;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+ 
+
+}
+
+
+/* Header */
+.putovanje-header {
+    text-align: center;
+    padding: 40px 10px;
+    border-bottom: 1px solid #e3dac9;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.putovanje-header h1 {
+    color: #b93c3c; /* Bordo boja */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.putovanje-header p {
+    font-size: 14px;
+    color: #666;
+}
+
+.back-btn {
+    display: inline-block;
+    color: #b93c3c;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Hronologija / Timeline kontejner */
+.timeline-container {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 20px; /* Prostor za liniju na mobilnom */
+}
+
+/* Vertikalna linija */
+.timeline-line {
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e3dac9;
+}
+
+/* Pojedinačni istorijski događaj */
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 25px;
+}
+
+/* Tačka na liniji */
+.timeline-dot {
+    position: absolute;
+    left: -4px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    background-color: #b93c3c;
+    border-radius: 50%;
+    border: 2px solid #faf6ee;
+    z-index: 2;
+}
+
+/* Datum iznad kartice */
+.timeline-date {
+    font-weight: bold;
+    color: #b93c3c;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+/* Kartica sa sadržajem */
+.timeline-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ebdcb9; /* Zlatkasto-krem ivica */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.timeline-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.timeline-content p {
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+
+/* Linkovi unutar kartica */
+.procitaj-vise {
+    display: inline-block;
+    color: #b93c3c;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.procitaj-vise:hover {
+    text-decoration: underline;
+}
+
+/* Footer stranice */
+.putovanje-footer {
+    text-align: center;
+    padding: 40px 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.putovanje-footer p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b93c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.footerb{
+    border-top: 1px solid var(--zlatna);
+    padding: 30px;
+    width: 100%;
+    height: 300px;
+    background-color: #3f0404d9;
+
+
+}
+
+.flogo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.kshslogo{
+    width: 60px;
+
+}
+
+.logotxt{
+    font-size: 26px;
+    font-family: var(--garamond);
+    font-weight: 700;
+    color: #ffff;
+
+}
+
+.desc{
+    font-family: var(--garamond);
+    color: var(--subtxtfootercolor);
+    font-size: 20px;
+}
+
+.links{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--subtxtfootercolor);
+
+}

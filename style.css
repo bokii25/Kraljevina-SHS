@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #f7f5f0;
+}
+
+
+:root {
+    --garamond: "Cormorant Garamond", serif;
+    --crvenadugmad: #c43939;
+    --btnactive: #ba1c1c;
+    --linecolor: #B1B2B5;
+    --subtxtfont: 'Lora', serif;
+    --subtxtfootercolor: #afafaf;
+    --zlatna: #d1a84d;
+
+}
+
+a{
+    font-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.navbar{
+    padding: 20px;
+    width: 100%;
+    height: 90px;
+    /* background-color: #1b1919; */
+    background-color: #460000d8;
+    /* background-color: #820e0ed5; */
+
+    border-bottom: 2px solid #d1a84d;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 40px #d1a84d;
+
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.kshslogo{
+    width: 60px;
+
+}
+
+.logotxt{
+    font-size: 26px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    color: #ffff;
+
+}
+
+.ist{
+    font-family: var(--garamond);
+    color: #ffff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.hero{
+    margin-top: 120px;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+.tit{
+    font-size: 30px;
+    font-family: var(--garamond);
+
+    text-align: center;
+    /* max-width: 180px;
+    word-break: break-all; */
+    font-weight: 600;
+
+    line-height: 27px;
+}
+
+.subtxt{
+    text-align: center;
+
+}
+
+.btnw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.btnp{
+    width: 145px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--crvenadugmad);
+    color: #ffff;
+    font-family: var(--garamond);
+    font-size: 16px;
+
+    transition: all 0.2s ease;
+}
+
+.btnp:active{
+    background-color: var(--btnactive);
+}
+
+.btnv{
+    width: 145px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--crvenadugmad);
+    color: #ffff;
+    font-family: var(--garamond);
+    font-size: 16px;
+
+    transition: all 0.2s ease;
+
+}
+
+.btnv:active{
+    background-color: var(--btnactive);
+}
+
+.subtit{
+    text-align: center;
+    font-family: var(--garamond);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.line{
+    width: 305px;
+    height: 1px;
+    background-color: var(--linecolor);
+}
+
+hr{
+    width: 80%;
+    height: 1px;
+    border: none;
+    background-color: var(--linecolor);
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.boxw{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    /* ili 20px - odluci posle */
+    width: 300px;
+    height: 300px;
+    background-color: #ffff;
+    border-radius: 15px;
+    gap: 13px;
+}
+
+.boxsubtxt{
+    font-family: var(--subtxtfont);
+}
+
+.boxtit{
+    font-family: var(--garamond);
+    font-weight: 600;
+    font-size: 33px;
+}
+
+.boxsubtxt{
+    font-size: 14px;
+    font-family: var(--subtxtfont);
+}
+
+.btnbox1{
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--crvenadugmad);
+    color: #ffff;
+    font-family: var(--garamond);
+    font-size: 16px;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    /* ili 20px - odluci posle */
+    width: 300px;
+    height: 300px;
+    background-color: #ffff;
+    border-radius: 15px;
+    gap: 13px;
+}
+
+
+
+.boxtit2{
+    font-family: var(--garamond);
+    font-weight: 600;
+    font-size: 33px;
+}
+
+.boxsubtxt2{
+    font-size: 14px;
+    font-family: var(--subtxtfont);
+}
+
+.btnbox2{
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--crvenadugmad);
+    color: #ffff;
+    font-family: var(--garamond);
+    font-size: 16px;
+    flex-shrink: 0;
+
+}
+
+.box3{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    /* ili 20px - odluci posle */
+    width: 300px;
+    height: 300px;
+    background-color: #ffff;
+    border-radius: 15px;
+    gap: 13px;
+}
+
+.box1, .box2, .box3{
+    border: 1px solid var(--zlatna);
+}
+
+.btnbox1, .btnbox2, .btnbox3{
+    transition: all 0.2s ease;
+}
+
+.btnbox1:active, .btnbox2:active, .btnbox3:active{
+    background-color: var(--btnactive);
+}
+
+
+.boxtit3{
+    font-family: var(--garamond);
+    font-weight: 600;
+    font-size: 33px;
+}
+
+.boxsubtxt3{
+    font-size: 14px;
+    font-family: var(--subtxtfont);
+}
+
+.btnbox3{
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--crvenadugmad);
+    color: #ffff;
+    font-family: var(--garamond);
+    font-size: 16px;
+    flex-shrink: 0;
+
+}
+
+.naslovw{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.vtit{
+    font-size: 23px;
+    font-family: var(--garamond);
+}
+
+
+.vladari{
+    padding: 0 40px;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+.vltit{
+    font-size: 33px;
+    font-family: var(--garamond);
+    font-weight: 600;
+}
+
+.hrvladari{
+    width: 80%;
+    height: 1px;
+    border: none;
+    background-color: var(--linecolor);
+}
+
+.vladariw{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+}
+
+.footerb{
+    border-top: 1px solid var(--zlatna);
+    padding: 30px;
+    width: 100%;
+    height: 320px;
+    background-color: #3f0404d9;
+
+
+}
+
+.flogo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.desc{
+    font-family: var(--garamond);
+    color: var(--subtxtfootercolor);
+    font-size: 20px;
+}
+
+.links{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--subtxtfootercolor);
+
+}
+
+.nav3{
+    margin-bottom: 20px;
+}
+
+.copyw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy{
+    font-size: 14px;
+    color: var(--subtxtfootercolor);
+}
+
